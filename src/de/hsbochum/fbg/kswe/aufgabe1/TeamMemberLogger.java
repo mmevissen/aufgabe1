@@ -15,10 +15,12 @@ public class TeamMemberLogger {
 
 	private void loadTeamMembers() {
 		this.members = new ArrayList<>();
-		
-		loadMemberA();
-		loadMemberB();
+
 		loadMemberC();
+		loadMemberB();
+		loadMemberA();
+
+
 	}
 
 	private void loadMemberC() {
@@ -26,11 +28,11 @@ public class TeamMemberLogger {
 	}
 
 	private void loadMemberB() {
-		
+		this.members.add(new TeamMember("Kevin", "Pearson"));
 	}
 
 	private void loadMemberA() {
-		
+
 	}
 
 	private void doLog() {
