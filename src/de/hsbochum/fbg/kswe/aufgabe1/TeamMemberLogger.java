@@ -2,9 +2,12 @@ package de.hsbochum.fbg.kswe.aufgabe1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.*;
 
 public class TeamMemberLogger {
-	
+
+	private final static  Logger LOGGER = Logger.getLogger(TeamMemberLogger.class.getName());
+
 	public static void main(String[] args) {
 		TeamMemberLogger tml = new TeamMemberLogger();
 		tml.loadTeamMembers();
@@ -19,7 +22,6 @@ public class TeamMemberLogger {
 		loadMemberC();
 		loadMemberB();
 		loadMemberA();
-
 
 	}
 
@@ -38,8 +40,7 @@ public class TeamMemberLogger {
 	private void doLog() {
 		System.out.println(String.format("%s Mitglieder insgesamt:", this.members.size()));
 		this.members.stream().forEach(m -> {
-			System.out.println(m.toString());
+			LOGGER.log(Level.INFO, m.toString());
 		});
 	}
-	
 }
