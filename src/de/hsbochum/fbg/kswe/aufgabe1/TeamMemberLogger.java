@@ -30,7 +30,7 @@ public class TeamMemberLogger {
 	}
 
 	private void loadMemberA() {
-		
+            this.members.add(new TeamMember("Ronny", "Bennet"));
 	}
 
 	private void doLog() {
