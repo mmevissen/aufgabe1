@@ -1,6 +1,6 @@
 # KSwe SoSe 2017 - Aufgabe 1
 
-Ziel dieser Aufgabe ist die Nutzung von GitHubs [Pull Request](https://help.github.com/articles/using-pull-requests/)
+Ziel dieser Aufgabe ist die Nutzung von GitHubs [Pull Request](https://help.github.com/articles/about-pull-requests/)
 Feature zur kollaborativen Anpassung einer Java-Klasse.
 
 
