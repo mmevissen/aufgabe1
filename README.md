@@ -3,6 +3,7 @@
 Ziel dieser Aufgabe ist die Nutzung von GitHubs [Pull Request](https://help.github.com/articles/using-pull-requests/)
 Feature zur kollaborativen Anpassung einer Java-Klasse.
 
+
 ## Beschreibung
 
 Die Klasse `TeamMemberLogger.java` gibt momentan noch eine
