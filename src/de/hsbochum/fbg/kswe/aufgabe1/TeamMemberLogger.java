@@ -46,7 +46,7 @@ public class TeamMemberLogger {
 
 	private void doLog() {
 		System.out.println(String.format("%s Mitglieder insgesamt:", this.members.size()));
-		this.members.stream().forEach(m -> {
+		this.members.stream().sorted((TeamMember m1, TeamMember m2) -> m1.getLastName().compareTo(m2.getLastName())).forEach(m -> {
 			//System.out.println(m.toString());
                         logger.log(Level.INFO, m.toString());
 		});
