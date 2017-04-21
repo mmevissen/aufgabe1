@@ -2,11 +2,15 @@ package de.hsbochum.fbg.kswe.aufgabe1;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 public class TeamMemberLogger {
-	
+
+	private final static  Logger LOGGER = Logger.getLogger(TeamMemberLogger.class.getName());
+
 	public static void main(String[] args) {
 		TeamMemberLogger tml = new TeamMemberLogger();
 		tml.loadTeamMembers();
@@ -29,7 +33,6 @@ public class TeamMemberLogger {
 		loadMemberB();
 		loadMemberA();
 
-
 	}
 
 	private void loadMemberC() {
@@ -48,8 +51,10 @@ public class TeamMemberLogger {
 		System.out.println(String.format("%s Mitglieder insgesamt:", this.members.size()));
 		this.members.stream().sorted((TeamMember m1, TeamMember m2) -> m1.getLastName().compareTo(m2.getLastName())).forEach(m -> {
 			//System.out.println(m.toString());
-                        logger.log(Level.INFO, m.toString());
+      // Arne
+      logger.log(Level.INFO, m.toString());
+      //Michael
+			LOGGER.log(Level.INFO, m.toString());
 		});
 	}
-	
 }
