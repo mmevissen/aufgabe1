@@ -49,3 +49,6 @@ local.properties
 # Code Recommenders
 .recommenders/
 
+/.idea/
+/src/de/hsbochum/fbg/kswe/aufgabe1/Java8Test.java
+/target/
